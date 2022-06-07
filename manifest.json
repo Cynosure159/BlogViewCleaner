@@ -1,0 +1,20 @@
+{  
+    "name": "Blog View Cleaner", 
+    "description" : "格式化blog网页布局",  
+    "version": "0.1",  
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://blog.csdn.net/*"],
+            "js": ["csdn.js"]
+        },
+        {
+            "matches": ["*://www.jianshu.com/p/*"],
+            "js": ["jianshu.js"] 
+        },
+        {
+            "matches": ["*://juejin.cn/post/*"],
+            "js": ["juejin.js"] 
+        }
+    ]
+}
